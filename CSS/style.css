@@ -266,7 +266,7 @@ h3{
 	}*/
 body {
     background: linear-gradient(-60deg, #2F5334, #3C0574,#2A1997, #6F0000);
-    background-size:1000% 1000%;
+    background-size:10000% 10000%;
     animation: gradient 40s ease infinite;
     width: 100vw;
     height: 100vh;
