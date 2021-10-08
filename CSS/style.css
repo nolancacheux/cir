@@ -89,7 +89,7 @@
 	font-family: "WorldSeries";
 	text-shadow: 2px 2px 5px black;
 	text-decoration:none;
-} 
+}
 .onglets a:hover,.onglets a:active{
 	color : #FFFFD9;
 	text-shadow: 2px 2px 5px black;
@@ -269,7 +269,7 @@ body {
     background-size:1000% 1000%;
     animation: gradient 40s ease infinite;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     top: 0;
     left: 0;
     margin: 0;
