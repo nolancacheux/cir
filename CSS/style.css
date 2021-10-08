@@ -4,7 +4,7 @@
 }
 @font-face {
 	font-family: "Daybury";
-	src: url("polices/Daybury.otf") format("truetype");
+	src: url("polices/Daybury.ttf") format("truetype");
 }
 @font-face {
 	font-family: "cafeitalic";
@@ -266,7 +266,7 @@ body {
     background-size:1000000% 1000000%;
     animation: gradient 25s ease infinite;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     top: 0;
     left: 0;
     margin: 0;
