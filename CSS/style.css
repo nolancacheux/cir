@@ -261,8 +261,8 @@ h3{
 
 body {
     background: linear-gradient(-45deg, orange, #3C0574,#2A1997, black);
-    background-size: cover;
-    animation: gradient 20s ease infinite;
+    background-size: 10000% 10000%;
+    animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
