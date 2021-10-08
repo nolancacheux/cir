@@ -90,7 +90,7 @@
 	text-shadow: 2px 2px 5px black;
 	text-decoration:none;
 }
-.onglets a:hover,.onglets a:focus{
+.onglets a:hover,.onglets a:active{
 	color : #FFFFD9;
 	text-shadow: 2px 2px 5px black;
 	border: 5px solid #D1D1A2FF;
@@ -112,7 +112,7 @@
 	text-shadow: 2px 2px 5px black;
 	text-decoration:none;
 }
-.centretitre a:hover,.centretitre a:focus {
+.centretitre a:hover,.centretitre a:active {
 	text-shadow: 10px 10px 15px black;
 	transition: 1s;
 
@@ -227,7 +227,7 @@ h3{
 .matiere ul  li {
     padding: 25px 0px;
 }
-.matiere a:hover,.matiere a:focus{
+.matiere a:hover,.matiere a:active{
 	color : #C3FFF9;
 	cursor: pointer;
 	text-decoration:none;
@@ -236,7 +236,7 @@ h3{
 	transition: 1.5s;
 
 }
-.courstd a:hover,.courstd a:focus{
+.courstd a:hover,.courstd a:active{
 	color : white;
 	cursor: pointer;
 	text-decoration:none;
