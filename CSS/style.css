@@ -263,6 +263,7 @@ body {
     background: linear-gradient(-45deg, orange, #3C0574,#2A1997, black);
     background-size:1000000% 1000000%;
     animation: gradient 25s ease infinite;
+
 }
 
 @keyframes gradient {
@@ -276,7 +277,7 @@ body {
         background-position: 0% 50%;
     }
 }
-.backgroundd {
+.backgroundd,.background {
 	z-index: -1;
     position: fixed;
     width: 100vw;
