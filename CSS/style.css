@@ -104,9 +104,8 @@
 	display: block;
   text-align: center;
 	justify-content: center;
-  margin : auto;
 	color : white;
-	margin :30px;
+	padding:20px;
 	font-size: 65px;
 	font-family: "WorldSeries";
 	text-shadow: 2px 2px 5px black;
