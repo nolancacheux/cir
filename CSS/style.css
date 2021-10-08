@@ -258,11 +258,21 @@ h3{
         border-radius: 50%;
     }
 }
-
-* {
+/*body {
+    background-color:  #2A1997;
+		background-size:1000000% 1000000%;
+	}*/
+body {
     background: linear-gradient(-45deg, orange, #3C0574,#2A1997, black);
     background-size:1000000% 1000000%;
     animation: gradient 25s ease infinite;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 
 }
 
