@@ -82,7 +82,7 @@
 	margin: auto;
 	text-align: center;
 	padding: 10px;
-	color : white;
+	color : white  ;
 	border: 10px solid #FFFFFF00;
 	border-radius: 100px;
 	font-size: 50px;
@@ -90,8 +90,17 @@
 	text-shadow: 2px 2px 5px black;
 	text-decoration:none;
 }
+.onglets a[href="HTML/cours_td_accueil.html"]{
+	color : #FDFED3 ;
+}
+.onglets a[href="HTML/contact_accueil.html"]{
+	color : #D3FDFE ;
+}
+.onglets a[href="https://aurion.junia.com"]{
+	color : #D6FED3   ;
+}
 .onglets a:hover,.onglets a:active{
-	color : #FFFFD9;
+	color : white;
 	text-shadow: 2px 2px 5px black;
 	border: 5px solid #D1D1A2FF;
 	border-radius: 150px;
