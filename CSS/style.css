@@ -91,13 +91,13 @@
 	text-decoration:none;
 }
 .onglets a[href="HTML/cours_td_accueil.html"]{
-	color : #FDFED3 ;
+	color : #F9FDE7 ;
 }
 .onglets a[href="HTML/contact_accueil.html"]{
 	color : #D3FDFE ;
 }
 .onglets a[href="https://aurion.junia.com"]{
-	color : #D6FED3   ;
+	color : #D5FFEB ;
 }
 .onglets a:hover,.onglets a:active{
 	color : white;
@@ -169,11 +169,27 @@ body{
     text-align: center;
     list-style:none;
 }
-.contact_matiere ul  li {
+.contact_matiere ul  li a {
     padding: 5px 0px;
 		color: #FFFFD9;
+		cursor: pointer;
 		text-shadow: 2px 2px 5px black;
 		font-family: cafeitalic;
+		text-decoration: none;
+}
+.contact_matiere ul li a:hover {
+    color: white;
+		text-shadow: 2px 2px 5px silver;
+		transition: 0,5s;
+
+
+}
+.contact_matiere ul  li  {
+    padding: 5px 0px;
+		color: rgba(0,0,0,0);
+		text-shadow: 2px 2px 5px black;
+		font-family: cafeitalic;
+		text-decoration: none;
 }
 
 h1,h2 {
