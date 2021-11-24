@@ -1,3 +1,6 @@
+
+/* On utilise font-face afin de pouvoir utiliser des polices qui sont ici téléchargées préalablement. */
+
 @font-face {
 	 font-family: "WorldSeries";
 	 src: url("polices/WorldSeries_PERSONAL_USE_ONLY.otf") format("truetype");
@@ -10,9 +13,8 @@
 	font-family: "cafeitalic";
 	src: url("polices/cafe.italic.ttf") format("truetype");
 }
-/**{
-	transition: 1.5s;
-}*/
+
+/* permet de faire apparaître progressivement les éléments choisis */
 .centretitre,.juniaisen,.accueiltitre,.centretitre2{
 	-webkit-animation-name: fadeInOpacity;
 	        animation-name: fadeInOpacity;
@@ -20,8 +22,8 @@
 	        animation-iteration-count: 1;
 	-webkit-animation-timing-function: ease-in;
 	        animation-timing-function: ease-in;
-	-webkit-animation-duration: 0.6s;
-	        animation-duration: 0.6s;
+	-webkit-animation-duration: 0.6s; /* Choisir le temps d'apparition */
+	        animation-duration: 0.6s; /* Ici on choisit 0,6s */
 }
 .courstd ,.matiere{
 	-webkit-animation-name: fadeInOpacity;
@@ -30,10 +32,11 @@
 	        animation-iteration-count: 1;
 	-webkit-animation-timing-function: ease-in;
 	        animation-timing-function: ease-in;
-	-webkit-animation-duration: 2s;
+	-webkit-animation-duration: 2s; /* Ici on choisit 2s */
 	        animation-duration: 2s;
 }
 
+/* Permet de définir l'opacité de l'élement au début et à la fin */
 @-webkit-keyframes fadeInOpacity {
 	0% {
 		opacity: 0;
@@ -43,14 +46,7 @@
 	}
 }
 
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
+/* Image junia en png sur la page d'accueil , on lui applique le style suivant. */
 .juniaisen img {
 	display: block;
 	margin-left:auto;
@@ -59,6 +55,8 @@
 	text-align:center;
 	width: 300px;
 }
+
+/* C'est le texte "Cycle Informatique et Réseaux" de l'accueil, on lui applique le style suivant. */
 .accueiltitre{
 	display: block;
   text-align: center;
@@ -70,7 +68,7 @@
 	text-shadow: 2px 2px 5px black;
 	text-decoration:none;
 }
-
+/* Ce sont les différentes pages où on peut accéder (Cours et TD,Contacts..) , on leur applique le style suivant. */
 .onglets {
 	display: flex;
 	flex-direction: column;
@@ -90,6 +88,7 @@
 	text-shadow: 2px 2px 5px black;
 	text-decoration:none;
 }
+/* Couleur des liens , on leur applique le style suivant. */
 .onglets a[href="HTML/cours_td_accueil.html"]{
 	color : #F9FDE7 ;
 }
@@ -99,6 +98,10 @@
 .onglets a[href="https://aurion.junia.com"]{
 	color : #D5FFEB ;
 }
+
+/* Les différents liens lorsqu'on les survole ou lorsqu'ils sont actifs  ,
+on applique à ces pseudos-classes le style suivant. */
+
 .onglets a:hover,.onglets a:active{
 	color : white;
 	text-shadow: 2px 2px 5px black;
@@ -109,6 +112,9 @@
 	margin:auto;
 
 }
+
+/* Le titre de chaque page des onglets (Cours & TD , Contacts....)
+on leur applique le style suivant.*/
 .centretitre a{
 	display: block;
   text-align: center;
@@ -123,38 +129,29 @@
 	text-shadow: 2px 2px 5px black;
 	text-decoration:none;
 }
+
+/* Les différents liens des titres lorsqu'on les survole ou lorsqu'ils sont actifs  ,
+on applique à ces pseudos-classes le style suivant. */
 .centretitre a:hover,.centretitre a:active {
 	text-shadow: 10px 10px 15px black;
 	transition: 1s;
 
 }
-
-body{
-	font-size: 16px;
-	font-family: Helvetica, sans-serif;
-}
+/* Listes des cours et des TD pour chaque matière , la même classe a été utilisée.*/
 .courstd ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 }
+
 .courstd ul li{
 	list-style-type: none;
 	padding: 10px;
 	margin: 0;
 }
 
-/*.container {
-	display:flex;
-	flex-direction: row;
-	justify-content: center;
-	gap: 340px 350px;
-	margin : 50px auto;
-	text-align:center;
-}
-.maths , .physique{
-	margin : auto;
-}*/
+/* Permet d'organiser correctement les blocs
+des listes des cours et des TD dans chaque matière.*/
 
 .maths,.Physique,.web,.informatique{
 	display:flex;
@@ -163,13 +160,15 @@ body{
 	margin : 30px auto;
 	text-align:center;
 }
+/* Liste des contacts dans la page contacts , on lui applique le style suivant*/
 .contact_matiere ul {
     margin:0;
     padding:0;
     text-align: center;
     list-style:none;
 }
-.contact_matiere ul  li a {
+/* Liens de la liste des contacts dans la page contacts , on lui applique le style suivant */
+.contact_matiere ul li a {
     padding: 5px 0px;
 		color: #FFFFD9;
 		cursor: pointer;
@@ -177,21 +176,23 @@ body{
 		font-family: cafeitalic;
 		text-decoration: none;
 }
+
+/* Lorsqu'on survole ces liens, on applique
+ à ces pseudos-classes le style suivant. */
+
 .contact_matiere ul li a:hover {
     color: white;
 		text-shadow: 2px 2px 5px silver;
 		transition: 0,5s;
-
-
 }
-.contact_matiere ul  li  {
+
+.contact_matiere ul li  {
     padding: 5px 0px;
 		color: rgba(0,0,0,0);
 		text-shadow: 2px 2px 5px black;
 		font-family: cafeitalic;
 		text-decoration: none;
 }
-
 h1,h2 {
 	line-height: 30px;
 	font-size: 38px;
@@ -200,6 +201,8 @@ h1,h2 {
 	font-family: "Arial";
 	text-shadow: 1px 1px 5px black;
 }
+/* Le titre des matières de chaque page des onglets (Maths , Physique....)
+on leur applique le style suivant.*/
 .titremaths,.titrephysique,.titreweb,.titreinformatique{
 	line-height: 50px;
 	font-size: 60px;
@@ -210,7 +213,7 @@ h1,h2 {
 	font-family: "Daybury";
 	text-shadow: 2px 2px 13px black;
 }
-
+/* Le bloc cours et le bloc TD de chaque matière auquels on applique le style suivant. */
 .Cours , .TD{
 	margin : auto;
 	padding: 0;
@@ -224,7 +227,7 @@ h3{
 	text-shadow: 1px 1px 5px black;
 }
 
-
+/* Style de chaque lien vers un cours ou un td */
 .courstd a{
 	color: #E0E2B6;
 	margin: 0 auto;
@@ -236,6 +239,7 @@ h3{
 
 
 }
+/* Style de chaque lien vers une matière (Mathématiques,Physique) dans la page de cours & td. */
 .matiere a{
   list-style-type: none;
 	color: white;
@@ -245,15 +249,21 @@ h3{
 	font-family: Arial;
 	list-style:none;
 }
+/* Style de la liste des matières (Mathématiques,Physique) dans la page de cours & td. */
 .matiere ul {
     margin:0;
     padding:0;
     text-align: center;
     list-style:none;
 }
-.matiere ul  li {
+.matiere ul li {
     padding: 25px 0px;
 }
+
+/* Style de la liste des matières (Mathématiques,Physique) dans la
+page de cours & td. Lorsqu'on les survole ou lorsqu'ils sont actifs  ,
+on applique à ces pseudos-classes le style suivant.*/
+
 .matiere a:hover,.matiere a:active{
 	color : #C3FFF9;
 	cursor: pointer;
@@ -263,6 +273,9 @@ h3{
 	transition: 1.5s;
 
 }
+/*  Style de chaque lien vers un cours ou un td.
+ Lorsqu'on les survole ou lorsqu'ils sont actifs  ,
+on applique à ces pseudos-classes le style suivant.*/
 .courstd a:hover,.courstd a:active{
 	color : white;
 	cursor: pointer;
@@ -272,7 +285,7 @@ h3{
 	transition: 1.5s;
 
 }
-
+/* Permet de pouvoir faire des animations en Css.*/
 @keyframes animate {
     0%{
         transform: translateY(0) rotate(0deg);
@@ -285,23 +298,28 @@ h3{
         border-radius: 50%;
     }
 }
-/*body {
-    background-color:  #2A1997;
-		background-size:1000000% 1000000%;
-	}*/
+
+/* Linear-gradient permet de faire un dégradé du fond en fonction du temps*/
 body {
+		/* Les 4 couleurs sur lequelles le dégradé se fait */
     background: linear-gradient(-60deg, #2F5334, #3C0574,#2A1997, #6F0000);
+
     background-size:10000% 10000%;
+
+		/* L'animation dure 40s et est répétée à l'infini. */
     animation: gradient 40s ease infinite;
+
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
     margin: 0;
     padding: 0;
+		font-size: 16px;
+		font-family: Helvetica, sans-serif;
 
 }
-
+/* On l'utilise afin de gérer le fond pour faire un dégradé.*/
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -313,17 +331,21 @@ body {
         background-position: 0% 50%;
     }
 }
+
 .backgroundd{
-	z-index: -1;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+	/* On utilise z-index : -1 afin que l'animation des carrés ne soit pas cachée par le fond dégradé.*/
+		z-index: -1;
+	  position: fixed;
+	  width: 100vw;
+	  height: 100vh;
+	  top: 0;
+	  left: 0;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
 }
+
+/* On applique à une liste de blocs/carrés le style suivant*/
 .backgroundd li {
     position: absolute;
     display: block;
@@ -334,7 +356,8 @@ body {
     animation: animate 26s linear infinite;
 }
 
-
+/* On applique à tous les blocs un style
+afin de gérer leur emplacement de départ et leur temps d'animation.*/
 .backgroundd li:nth-child(0) {
     left: 56%;
     width: 78px;
